@@ -26,27 +26,44 @@ This repository was developed as part of a machine learning project, and contain
 ## 🗂️ Project Structure
 .
 ├── consts.py                            # Project-wide constants
+
 ├── final_project.ipynb                  # Main Colab notebook for training, evaluation, and submission
+
 ├── evaluation/
+
 │   └── offline_eval.py                  # Offline evaluation pipeline implementation (predict_samples, compute_eval_metrics)
+
 ├── modeling/
+
 │   ├── model_interface.py              # Defines the base model interface
+
 │   ├── model_random.py                 # Contains RandomBinaryClassifier
+
 │   ├── model_single_layer.py          # Implementation of SingleLayerNN
+
 │   └── trivial_models.py              # AlwaysPositive and AlwaysNegative classifiers
+
 ├── utils/
+
 │   └── utils.py                        # Utility functions (e.g., dataloader creation, preprocessing helpers)
+
 ├── dataloader/
+
 │   ├── fault_csv_dataset.py           # Custom PyTorch dataset class for loading commit data
+
 │   └── preprocess.py                  # Data preprocessing logic (fit/transform for features)
+
 ├── data/
+
 │   ├── raw/                           # Contains raw datasets (e.g., user_meta.csv)
+
 │   └── split/                         # Pre-split train/val/test datasets
+
 ├── submission/
+
 │   └── generate_submission.py         # Script to zip files and generate Gradescope-compatible submission
+
 └── requirements.txt                   # Python dependencies
-📈 Offline Evaluation Details
-The evaluation pipeline computes:
 
 ---
 
